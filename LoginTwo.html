@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+    
+    
+    
+    
+    <head>
+    
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href= "LoginTwo.css">
+
+</head>
+         <body>
+             
+       
+             <!---------------------------->
+             
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Coffee<br> Login Page</h2>
+            <p>Login or register from here to access our site.</p>
+         </div>
+     </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                
+               <body oncontextmenu="return false">
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+    <div>Cafe<span>Online</span></div>
+
+</div>
+    
+<form name="login">
+    <div class="login"></div>
+  <!-- <input type="text" placeholder="username" name="userid"/>--->
+	
+	
+	
+	
+	
+<input type="email" placeholder="Enter your email" name="userid">
+
+	
+	
+	
+    
+    <input type="password" placeholder="password" name="pswrd"/>
+    <br>
+    <input type="submit" onclick="check(this.form)" value="login"/>
+</form>
+				   
+
+				   
+				   
+				 
+                   </body>
+        
+            </div>
+             
+         </div>
+      </div>
+      
+    </body>
+    <script language="javascript">
+    function check(form)
+
+    {
+		
+		 if (form.userid.value == "coffee@coffee.com" && form.pswrd.value == "coffee"){
+            window.open('http://localhost:8080/EShop/Checkout.php')
+        }
+        else{
+            alert(" the user name or password you have entered is incorrect. Please try again.")
+
+    }
+        }
+</script>
+    
+    
+    
+      </html>
